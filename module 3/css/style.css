@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    text-align: center;  
+    width: device-width; 
+    user-zoom: fixed;
+}
+.card {
+    display: inline-block;
+    width: 420px;
+    margin-right: 58px;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    vertical-align: middle; 
+    font-size: 16px;
+}
+header {
+    margin: 0 auto;
+    width: 900px;
+    height: 99px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 55px;
+}
+nav li {
+    display: inline;
+    margin-right: 60px;
+    margin-left: 60px;
+    text-align: left;
+    list-style: none;
+}
+nav {
+text-align: center;
+text-transform: none;
+ font-family: "Playfair Display", serif;
+ font-size: 14px;
+ text-transform: uppercase;
+ margin-bottom: 103px;
+ margin-top: 55px;
+ font-weight: bold;
+}
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+p {
+    margin-top: 38px;
+    margin-bottom: 148px;
+    font-style: 14px;
+}
+h3 {
+    line-height: 20px;
+}
+h4 {
+    text-transform: uppercase;
+    line-height: 36px;
+}
+h4 {
+    margin-top: 31px;
+    margin-bottom: 33px;
+}
+button {
+    width: 157px;
+    height: 55px;
+    margin: 140px;
+    margin-bottom: 30px;
+    margin-left: 90px;
+    align-content: center;
+    margin-top: -50px;
+ }
+ 
+a:hover {
+    color: #1cb99a;
+}
