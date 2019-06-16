@@ -7,24 +7,28 @@
    <title>Document</title>
  </head>
 <body>
-   <header class="page-header container clearfix">
-     <a href="#" class="site-logo"><img src="./images/mart.png" alt=""></a>
-     <ul class="menu">
-       <li class="submenu"><a href="#" class="submenu-link">home</a></li>
-       <li class="submenu"><a href="#">about us</a></li>
-       <li class="submenu"><a href="#">page</a></li>
-       <li class="submenu"><a href="#">shop</a></li>
-       <li class="submenu"><a href="#">blog</a></li>
-       <li class="submenu"><a href="#">contact us</a></li>
-     </ul>
-   </header> 
-   <!-- clearfix не факт что нужен -->
+    <header class="page-header container clearfix">
+        <nav class="page-nav">
+            <a href="#" class="site-logo">
+                <img src="/images/mart.png" width="78" height="21" alt="mart"> 
+            </a>
+        <ul class="site-navigation clearfix">
+           <li><a href="#">home</a></li>
+           <li><a href="#">about us</a></li>
+           <li><a href="#">page</a></li>
+           <li><a href="#">shop</a></li>
+           <li><a href="#">blog</a></li>
+           <li><a href="#">contact us</a></li>
+        </ul>
+        </nav>
+    </header>
+   
    <main class="container clearfix"> 
-      <section title="product">
+      <section class="product">
         <div class="title">
           <h1>featured products</h1>
         </div>
-        <div class="product-list">
+        <div class="product-list clearfix">
           <div class="product-list-item">
             <div class="photo"><img class="photo-size" src="images/product1.png" alt="blue tshirt" ></div>
             <div class="name">blue tshirt</div>
@@ -42,7 +46,7 @@
           </div>
           <div class="product-list-item">
               <div class="photo"><img class="photo-size" src="images/product4.png" alt="cool lingerie"></div>
-              <div class="name">cool lingerie</div>
+              <div class="name ">cool lingerie</div>
               <div class="price">56</div>
           </div>
           <div class="product-list-item">

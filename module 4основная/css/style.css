@@ -20,31 +20,60 @@
 *::before {
   box-sizing: inherit;
 }
-.menu{
-  list-style: none;
-  float: right;
-  padding-top: 42px;
-}
-.submenu{
-  display: inline-block;
-  margin-right: 30px;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-.submenu:last-child{
-  margin-right: 0;
-}
-.site-logo{
-   float: left;
-   padding-top: 37px;
-}
-.submenu a{
-  text-decoration: none;
-  font-size: 14px;
-  color: rgb(15, 1, 1);
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-}
+
+
+
+.page-header{
+  margin-bottom: 105px;
+  }
+  
+  
+  .site-navigation{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   font-size: 14px;
+   display: inline-block;
+   width: 1026px;
+   text-align: right;
+   vertical-align: middle;
+   
+   
+  }
+  
+  
+  .site-navigation li{
+   display: inline-block;
+   margin-right: 30px;
+  }
+  .site-navigation li:last-child{
+   margin-right: 0;
+  }
+  
+  .site-navigation a{
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 700;
+   line-height: 16px;
+   display: block;
+  }
+  
+  .site-logo{
+   display:inline-block;
+   vertical-align: middle;
+  }
+  
+  .site-navigation a:hover,
+  .site-navigation a:focus{
+     color: rgb(26, 188, 156);
+  }
+  .page-nav{
+   padding: 38px 0;
+  }
+
+
+
+
 img{
   display:block;
   max-width: 100%;
@@ -52,10 +81,7 @@ img{
 }
    
 
-.submenu-link:hover{
-  color: #1cb99a;
-}
-   
+
 .page-header{
   margin-bottom: 104px;
 }
@@ -83,59 +109,68 @@ h1{
   width: 255px;
   height: 320px;
   display: inline-block;
-  margin-right: 18px;
+  margin-right: 26px;
   margin-bottom: 30px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
-  text-align: center;
   background-size: contain;
   /* float: left; */
-   }
-   .product-list-item:nth-child(4n) {
-     margin-right: 0px;
-   }.product-list-item:nth-last-child(-n+4) {
-     margin-bottom: 0px;
-   }
+}
+.product-list-item:hover .name {
+  background: #1abc9c;
+}
+.product-list-item:hover .price {
+  background: #7fd9c7;
+}
 
-   /* .product-list-item:last-child{
-    margin-right: 0px;
-   } */
-   .photo{
-    width: 255px;
-    height: 280px;
-    background: rgb(233, 240, 253);
-   }
+.product-list-item:nth-child(4n) {
+  margin-right: 0;
+}.product-list-item:nth-last-child(-n+4) {
+  margin-bottom: 0;
+}
+
+  
+.photo{
+  width: 255px;
+  height: 280px;
+  background: rgb(233, 240, 253);
+}
    .photo-size{
     width: 100%;
     height: 100%;
     object-fit: cover;
    }
    
-   .name{
-    height: 40px;
-    width: 195px;
-    background: rgb(50, 50, 50);
-    float: left;
-    padding-left: 15px;
-    line-height: 40px;
+.name {
+  height: 40px;
+  width: 195px;
+  background: rgb(50, 50, 50);
+  float: left;
+  padding-left: 15px;
+  line-height: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  float: left;
+}
+.price {
+  width: 60px;
+  height: 40px;
+  background: rgb(140, 140, 140);
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  float: left;
    }
-   .price{
-    width: 60px;
-    height: 40px;
-    background: rgb(140, 140, 140);
-    float: left;
-    text-align: center;
-    line-height: 40px;
-   }
-   /* .price::before {
-    content: "$";
-   } */
-   .pictures {
-     /* width: 350px; */
-     height: 260px;
-   }
- 
-   p {
+.price::before {
+  content: "$";
+}
+.pictures {
+  height: 260px;
+}
+
+p {
     margin-top: 38px;
     /* margin-bottom: 148px; */
     font-style: 14px;
@@ -191,16 +226,19 @@ p {
   margin-right: 0;
   /* width: 0 auto; */
 }
-button {
-  width: 157px;
-  height: 55px;
-  /* margin: 140px;
-  margin-bottom: 30px; */
-  margin-left: 90px;
-  align-content: center;
-  margin-top: -50px;
-  color:  white;
+.ReadMore {
+  margin: 0;
+  border: none;
+  padding: 14px 42px;
+  background-color: rgb(78, 198, 171);
+  font-size: 16px;
+  line-height: 26px;
+  display: block;
+  border-radius: 3%;
+  color: white;
+  margin-top: 19px;
 }
+
 .names::after {
   content: " ";
   display: block;
@@ -215,14 +253,24 @@ a:hover {
 }
 
 
-.ReadMore {
+
+/* .ReadMore {
     width: 160px;
     height: 51.33px;
-    /* color: #ffffff; */
     background-color: rgb(78, 198, 171);
     font-size: 16px;
     margin-top: 19px;
-}
+} */
+/* button {
+  width: 157px;
+  height: 55px;
+  margin-left: 90px;
+  align-content: center;
+  margin-top: -50px;
+  color:  white;
+  border-radius: 3%;
+  border: none;
+} */
 
 
 
